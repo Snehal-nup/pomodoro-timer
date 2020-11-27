@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Strait&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="heading">Pomodoro Timer</h1>
+    <div id="container">
+      <p class="label" id="work">Work:</p>
+      <p class="label" id="cycles">Cycle:</p>
+      <p class="label" id="break">Break:</p>
+
+      <!-- for work timer -->
+      <div id="work-timer" class="timer">
+        <p id="work-min">25</p>
+        <p class="semicolon">:</p>
+        <p id="work-sec">00</p>
+      </div>
+
+      <p id="counter" class="timer">0</p>
+
+      <!-- for break timer -->
+      <div id="break-timer" class="timer">
+        <p id="break-min">05</p>
+        <p class="semicolon">:</p>
+        <p id="break-sec">00</p>
+      </div>
+
+      <button id="start" class="button">Start</button>
+      <button id="stop" class="button">Stop</button>
+      <button id="reset" class="button">Reset</button>
+    </div>
+    <div class="keys">
+      <h1>Keyboard Shortcuts</h1>
+      <ul>
+        <li>Press S:-To Start the Timer</li>
+        <li>Press R:-To Reset the Timer</li>
+        <li>Press P:-To Pause the Timer</li>
+      </ul>
+    </div>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
